@@ -36,15 +36,16 @@ class AcesSocial:
     
     def Pestalozzi(self):
         self.ct = Toplevel()
-        self.ct.geometry("400x300")
+        self.ct.geometry('320x500+200+100')
         self.ct.resizable(True, True)
         self.ct["bg"] = '#ffffff'
         self.ct.iconbitmap("pessoas.ico")
 
-        self.txt2 = Label(self.ct,bg='#ffffff', text="Sociedade Pestalozzi Resende - Endereço: R. Cel. Rocha Santos, 656 - Jardim Brasilia 2"
-        "Resende - RJ, 27515-000, Telefone: (24) 3354-1460.",
+        self.txt2 = Label(self.ct,bg='#ffffff', text='''Sociedade Pestalozzi Resende 
+        Endereço: R. Cel. Rocha Santos, 656 - Jardim Brasilia 2
+        Resende - RJ, 27515-000, Telefone: (24) 3354-1460.''',
         font='arial, ', height=1, width=5, relief='flat')
-        self.txt2.place(relx= 0, rely=0.38, relwidth= 1, relheight= 0.10)
+        self.txt2.place(relx=0, rely=0.38, relwidth= 1, relheight= 0.18)
     
     def JanelaMenu(self):
         self.root.withdraw()
