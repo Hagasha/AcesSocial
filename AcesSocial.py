@@ -2,7 +2,7 @@ from tkinter import *
 from time import sleep
 from tkinter import messagebox
 
-
+ 
 class AcesSocial:
     def __init__(self):
         self.root = Tk()
@@ -33,8 +33,19 @@ class AcesSocial:
 
     def msgsobre(self):
         messagebox.showinfo("AcesSocial", "Esse projeto foi feito para ajudar as pessoas em vulnerabilidade social." )  
-        
+    
+    def Pestalozzi(self):
+        self.ct = Toplevel()
+        self.ct.geometry("400x300")
+        self.ct.resizable(True, True)
+        self.ct["bg"] = '#ffffff'
+        self.ct.iconbitmap("pessoas.ico")
 
+        self.txt2 = Label(self.ct,bg='#ffffff', text="Sociedade Pestalozzi Resende - Endereço: R. Cel. Rocha Santos, 656 - Jardim Brasilia 2"
+        "Resende - RJ, 27515-000, Telefone: (24) 3354-1460.",
+        font='arial, ', height=1, width=5, relief='flat')
+        self.txt2.place(relx= 0, rely=0.38, relwidth= 1, relheight= 0.10)
+    
     def JanelaMenu(self):
         self.root.withdraw()
         self.jm = Tk()
@@ -43,7 +54,6 @@ class AcesSocial:
         self.root.resizable(False,False)
         self.jm["bg"] = '#ffffff'
         self.jm.iconbitmap("pessoas.ico")
-        self.imgPesquisa = PhotoImage (file = "lupa.png")
         
 
         self.barramenu = Menu(self.jm)
@@ -52,7 +62,7 @@ class AcesSocial:
         self.contatos.add_command(label='Sair', command= self.jm.quit)
         self.barramenu.add_cascade(label="Opções", menu=self.contatos)
         
-         
+
         self.pesquisar = Entry(self.jm, font= "Bold, 16")
         self.pesquisar.place(relx=0.10, rely=0.02, relwidth = 0.75, relheight = 0.08)
         
@@ -66,11 +76,8 @@ class AcesSocial:
         self.btn4.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
         self.btn5 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
         self.btn5.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
-        self.btn6 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn6 = Button(self.jm, bg='#7ca4da', text='Pestalozzi', font='bold, 10', height=1, width=5, relief='flat', command=self.Pestalozzi)
         self.btn6.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
-
-        self.btnPesquisa = Button(self.jm, image=self.imgPesquisa, relief='flat',bg='grey',command=self.semcomando)
-        self.btnPesquisa.place(relx=0.30, rely=0.03, relheight=0.10, relwidth=0.10)
 
         self.jm.config(menu=self.barramenu)
 
