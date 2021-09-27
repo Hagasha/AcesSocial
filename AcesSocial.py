@@ -2,7 +2,7 @@ from tkinter import *
 from time import sleep
 from tkinter import messagebox
 
- 
+
 class AcesSocial:
     def __init__(self):
         self.root = Tk()
@@ -43,6 +43,7 @@ class AcesSocial:
         self.root.resizable(False,False)
         self.jm["bg"] = '#ffffff'
         self.jm.iconbitmap("pessoas.ico")
+        self.imgPesquisa = PhotoImage (file = "lupa.png")
         
 
         self.barramenu = Menu(self.jm)
@@ -51,7 +52,7 @@ class AcesSocial:
         self.contatos.add_command(label='Sair', command= self.jm.quit)
         self.barramenu.add_cascade(label="Opções", menu=self.contatos)
         
-
+         
         self.pesquisar = Entry(self.jm, font= "Bold, 16")
         self.pesquisar.place(relx=0.10, rely=0.02, relwidth = 0.75, relheight = 0.08)
         
@@ -67,6 +68,9 @@ class AcesSocial:
         self.btn5.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
         self.btn6 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
         self.btn6.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
+
+        self.btnPesquisa = Button(self.jm, image=self.imgPesquisa, relief='flat',bg='grey',command=self.semcomando)
+        self.btnPesquisa.place(relx=0.30, rely=0.03, relheight=0.10, relwidth=0.10)
 
         self.jm.config(menu=self.barramenu)
 
