@@ -1,7 +1,7 @@
 from tkinter import *
 from time import sleep
 from tkinter import messagebox
-import os
+
  
 class AcesSocial:
     def __init__(self):
@@ -38,15 +38,33 @@ class AcesSocial:
         self.jm.geometry('320x500+200+100')
         self.jm.title('AcesSocial')
         self.root.resizable(False,False)
-        self.jm["bg"] = '#f7f7f7'
+        self.jm["bg"] = '#ffffff'
         self.jm.iconbitmap("pessoas.ico")
         
+
         self.barramenu = Menu(self.jm)
         self.contatos = Menu(self.barramenu, tearoff=0)
-        self.contatos.add_command(label='Configurações', command=self.semcomando)
+        self.contatos.add_command(label='Sobre', command=self.semcomando)
         self.contatos.add_command(label='Sair', command= self.jm.quit)
         self.barramenu.add_cascade(label="Opções", menu=self.contatos)
         
+
+        self.pesquisar = Entry(self.jm, font= "Bold, 16")
+        self.pesquisar.place(relx=0.10, rely=0.02, relwidth = 0.75, relheight = 0.08)
+        
+        self.btn1 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn1.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
+        self.btn2 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn2.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
+        self.btn3 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn3.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
+        self.btn4 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn4.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
+        self.btn5 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn5.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
+        self.btn6 = Button(self.jm, bg='#7ca4da', text='exemplo', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn6.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
+
         self.jm.config(menu=self.barramenu)
 
   
