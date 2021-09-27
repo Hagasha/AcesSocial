@@ -31,6 +31,9 @@ class AcesSocial:
     def semcomando(self):
         print('')
 
+    def msgsobre(self):
+        messagebox.showinfo("AcesSocial", "Esse projeto foi feito para ajudar as pessoas em vulnerabilidade social." )  
+        
 
     def JanelaMenu(self):
         self.root.withdraw()
@@ -44,7 +47,7 @@ class AcesSocial:
 
         self.barramenu = Menu(self.jm)
         self.contatos = Menu(self.barramenu, tearoff=0)
-        self.contatos.add_command(label='Sobre', command=self.semcomando)
+        self.contatos.add_command(label='Sobre', command=self.msgsobre)
         self.contatos.add_command(label='Sair', command= self.jm.quit)
         self.barramenu.add_cascade(label="Opções", menu=self.contatos)
         
