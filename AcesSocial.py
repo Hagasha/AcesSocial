@@ -37,11 +37,13 @@ class AcesSocial:
     
 
     def barraOpcoes(self):
-        self.telaOpcoes = Toplevel()
+        self.jm.withdraw()
+        self.telaOpcoes = Tk()
         self.telaOpcoes.geometry('320x500+200+100')
         self.telaOpcoes.resizable(True, True)
         self.telaOpcoes["bg"] = '#ffffff'
         self.telaOpcoes.iconbitmap("pessoas.ico")
+        self.telaOpcoes.title("Opções")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
 
         self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#3ec4cd', font = 'bold, 15', relief='flat', command=self.msgsobre)
