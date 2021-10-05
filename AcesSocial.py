@@ -180,6 +180,7 @@ Telefone: (24) 3360-5098''',
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
     def crasItapuca(self):
+        self.jm2.wm_withdraw()
         self.telaItapuca = Toplevel()
         self.telaItapuca.geometry('320x500+200+100')
         self.telaItapuca.resizable(True, True)
@@ -198,12 +199,116 @@ Telefone: (24) 3360-5239''',
         self.btnVoltarPrinc = Button(self.telaItapuca, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
+    def crasItinerante(self):
+        self.jm2.wm_withdraw()
+        self.telaItinerante = Toplevel()
+        self.telaItinerante.geometry('320x500+200+100')
+        self.telaItinerante.resizable(True, True)
+        self.telaItinerante["bg"] = '#ffffff'
+        self.telaItinerante.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtItinerante = Label(self.telaItinerante,bg='#ffffff', text='''CRAS Itinerante
+Endereço: 
+Rua do Rosário
+n° 45 - Lavapés
+Resende - RJ, 
+Telefone: (24) 3360-9510''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtItinerante.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPrinc = Button(self.telaItinerante, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+        
+    def nossaCasa(self):
+        self.jm2.wm_withdraw()
+        self.telanossaCasa = Toplevel()
+        self.telanossaCasa.geometry('320x500+200+100')
+        self.telanossaCasa.resizable(True, True)
+        self.telanossaCasa["bg"] = '#ffffff'
+        self.telanossaCasa.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtnossaCasa = Label(self.telanossaCasa,bg='#ffffff', text='''Abrigo nossa Casa
+Endereço: 
+Av.Rita Maria Ferreira da Rocha
+n° 1301 - Jardim Jalisco
+Resende - RJ, 
+Telefone: (24) 3360-9888''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtnossaCasa.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPrinc = Button(self.telanossaCasa, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+    
+    def crasLavapes(self):
+        self.jm2.wm_withdraw()
+        self.telaLavapes = Toplevel()
+        self.telaLavapes.geometry('320x500+200+100')
+        self.telaLavapes.resizable(True, True)
+        self.telaLavapes["bg"] = '#ffffff'
+        self.telaLavapes.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtLavapes = Label(self.telaLavapes,bg='#ffffff', text='''CRAS Lavapés
+Endereço: 
+Rua Eduardo Cotrim
+n° 36 - Lavapés
+Resende - RJ, 
+Telefone: (24) 3360-9887''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtLavapes.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPrinc = Button(self.telaLavapes, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def crasJDEsperanca(self):
+        self.jm2.wm_withdraw()
+        self.telajdEsperanca = Toplevel()
+        self.telajdEsperanca.geometry('320x500+200+100')
+        self.telajdEsperanca.resizable(True, True)
+        self.telajdEsperanca["bg"] = '#ffffff'
+        self.telajdEsperanca.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtjdEsperanca = Label(self.telajdEsperanca,bg='#ffffff', text='''CRAS Jardim Esperança
+Endereço: 
+Rua Frei Tito
+n° 27 - Fazenda da Barra I
+Resende - RJ, 
+Telefone: (24) 3354-4676''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtjdEsperanca.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPrinc = Button(self.telajdEsperanca, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+
+    def cciToboga(self):
+        self.jm2.wm_withdraw()
+        self.telacci = Toplevel()
+        self.telacci.geometry('320x500+200+100')
+        self.telacci.resizable(True, True)
+        self.telacci["bg"] = '#ffffff'
+        self.telacci.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtcci = Label(self.telacci,bg='#ffffff', text='''CCI Tobogã
+Endereço: 
+Rua Governador Portela
+s/n° (Parque Tobogã) - Manejo.
+Resende - RJ, 
+Telefone: (24) 3360-0685''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtcci.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPrinc = Button(self.telacci, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+
+
 
 
 
 # Crianddo primeira página com os serviços sociais
 
     def JanelaMenu(self):
+        self.root.withdraw()
         self.jm = Tk()
         self.jm.geometry('320x500+200+100')
         self.jm.title('AcesSocial')
@@ -213,6 +318,7 @@ Telefone: (24) 3360-5239''',
         self.imgPesquisa = PhotoImage (file = "lupa.png")
         self.imgConfig = PhotoImage(file = "imgConfig.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
+
 
 
         #self.txt3 = Label (self.jm, bg='black', text="Procure por um serviço social aqui!", font='arial, 11', height=1, width=5, relief='flat' )
@@ -246,6 +352,7 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
 # Criando segunda pagina de serviços
 
     def Menu2(self):
+        self.jm.withdraw()
         self.jm2 = Tk()
         self.jm2.geometry('320x500+200+100')
         self.jm2.title('AcesSocial')
@@ -257,15 +364,15 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
 
         self.btn6 = Button(self.jm2, bg='#7ca4da', text='CRAS Itapuca', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItapuca)
         self.btn6.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
-        self.btn7 = Button(self.jm2, bg='#7ca4da', text='CRAS Paraíso', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn7 = Button(self.jm2, bg='#7ca4da', text='Abrigo Nossa Casa', font='bold, 10', height=1, width=5, relief='flat', command=self.nossaCasa)
         self.btn7.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
-        self.btn8 = Button(self.jm2, bg='#7ca4da', text='Prefeitura de Resende', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn8 = Button(self.jm2, bg='#7ca4da', text='CCI Tobogã', font='bold, 10', height=1, width=5, relief='flat', command=self.cciToboga)
         self.btn8.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
-        self.btn9 = Button(self.jm2, bg='#7ca4da', text='Fórum de Resende', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn9 = Button(self.jm2, bg='#7ca4da', text='CRAS Jardim Esperança', font='bold, 10', height=1, width=5, relief='flat', command=self.crasJDEsperanca)
         self.btn9.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
-        self.btn10 = Button(self.jm2, bg='#7ca4da', text='Asilo Nicolino Gulhot', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn10 = Button(self.jm2, bg='#7ca4da', text='CRAS Lavapés', font='bold, 10', height=1, width=5, relief='flat', command=self.crasLavapes)
         self.btn10.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
-        self.btn11= Button(self.jm2, bg='#7ca4da', text='Pestalozzi', font='bold, 10', height=1, width=5, relief='flat', command=self.semcomando)
+        self.btn11= Button(self.jm2, bg='#7ca4da', text='CRAS Itinerante', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItinerante)
         self.btn11.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
 
 
