@@ -36,14 +36,10 @@ class AcesSocial:
         self.telaOpcoes["bg"] = '#ffffff'
         self.telaOpcoes.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
-
-        self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#3ec4cd', font = 'bold, 15', relief='raised', command=self.msgsobre)
         self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#3ec4cd', font = 'bold, 15', relief='flat', command=self.msgsobre)
         self.btnSobre.place(relx=0.10, rely=0.18, relwidth = 0.80, relheight = 0.10)
-        self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#3ec4cd', font = 'bold, 15', relief='raised', command=self.telaOpcoes.quit)
         self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#3ec4cd', font = 'bold, 15', relief='flat', command=self.telaOpcoes.quit)
         self.btnSair.place(relx=0.10, rely=0.38, relwidth = 0.80, relheight = 0.10)
-        self.btnVoltarPrinc = Button(self.telaOpcoes, image = self.imgVoltar, bg ='white', font='bold, 10', command = self.JanelaMenu)
         self.btnVoltarPrinc = Button(self.telaOpcoes, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
@@ -553,7 +549,7 @@ niamresende@yahoo.com.br''',
         self.txt3 = Label(self.jm,bg='white', text='''Encontre informações de 
 serviços sociais aqui!
 Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
-        self.txt3.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
+        self.txt3.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
 
         self.btnConfig = Button (self.jm, text = "Opções", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.barraOpcoes)
@@ -589,7 +585,7 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
         self.txt3 = Label(self.jm2,bg='white', text='Página 2', font='arial, 9', height=1, width=5, relief='flat' )
-        self.txt3.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
+        self.txt3.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
         self.btn7 = Button(self.jm2, bg='#7ca4da', text='CRAS Itapuca', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItapuca)
         self.btn7.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
@@ -624,7 +620,7 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
         self.txt3 = Label(self.jm3,bg='white', text='Página 3', font='arial, 9', height=1, width=5, relief='flat' )
-        self.txt3.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
+        self.txt3.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
         self.btn13 = Button(self.jm3, bg='#7ca4da', text='CCI Cidade Alegria', font='bold, 10', height=1, width=5, relief='flat', command=self.cciAlegria)
         self.btn13.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
@@ -659,7 +655,7 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
         self.txt4 = Label(self.jm4,bg='white', text='Página 4', font='arial, 9', height=1, width=5, relief='flat' )
-        self.txt4.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
+        self.txt4.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
         self.btn19 = Button(self.jm4, bg='#7ca4da', text='Diretoria de Cad. único e Bolsa Família', font='bold, 10', height=1, width=5, relief='flat', command=self.BolsaFml)
         self.btn19.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
