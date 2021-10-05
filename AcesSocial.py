@@ -282,25 +282,252 @@ Telefone: (24) 3354-4676''',
 
     def cciToboga(self):
         self.jm2.wm_withdraw()
-        self.telacci = Toplevel()
-        self.telacci.geometry('320x500+200+100')
-        self.telacci.resizable(True, True)
-        self.telacci["bg"] = '#ffffff'
-        self.telacci.iconbitmap("pessoas.ico")
+        self.telacciToboga = Toplevel()
+        self.telacciToboga.geometry('320x500+200+100')
+        self.telacciToboga.resizable(True, True)
+        self.telacciToboga["bg"] = '#ffffff'
+        self.telacciToboga.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
 
-        self.txtcci = Label(self.telacci,bg='#ffffff', text='''CCI Tobogã
+        self.txtcciToboga = Label(self.telacciToboga,bg='#ffffff', text='''CCI Tobogã
 Endereço: 
 Rua Governador Portela
 s/n° (Parque Tobogã) - Manejo.
 Resende - RJ, 
 Telefone: (24) 3360-0685''',
         font='arial, 15', height=1, width=5, relief='flat')
-        self.txtcci.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
-        self.btnVoltarPrinc = Button(self.telacci, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.txtcciToboga.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPrinc = Button(self.telacciToboga, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
+    def cciAlegria(self):
+        self.jm3.wm_withdraw()
+        self.telacciAlegria = Toplevel()
+        self.telacciAlegria.geometry('320x500+200+100')
+        self.telacciAlegria.resizable(True, True)
+        self.telacciAlegria["bg"] = '#ffffff'
+        self.telacciAlegria.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
 
+        self.txtcciAlegria = Label(self.telacciAlegria,bg='#ffffff', text='''CCI Cidade Alegria
+Endereço: 
+Rua das Samambaias, 
+s/n - Cidade Alegria.
+Resende - RJ, 
+Telefone: (24) 3359-5557''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtcciAlegria.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telacciAlegria, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def cciParaiso(self):
+        self.jm3.wm_withdraw()
+        self.telacciParaiso = Toplevel()
+        self.telacciParaiso.geometry('320x500+200+100')
+        self.telacciParaiso.resizable(True, True)
+        self.telacciParaiso["bg"] = '#ffffff'
+        self.telacciParaiso.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtcciParaiso = Label(self.telacciParaiso,bg='#ffffff', text='''CCI Paraíso
+Endereço: 
+Rua Dom Bosco, 
+s/n (Parque Paraíso) - Paraíso.
+Resende - RJ, 
+Telefone: (24) 3360-3707''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtcciParaiso.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telacciParaiso, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def FmlAcolhedora(self):
+        self.jm3.wm_withdraw()
+        self.telaFmlAcolhedora = Toplevel()
+        self.telaFmlAcolhedora.geometry('320x500+200+100')
+        self.telaFmlAcolhedora.resizable(True, True)
+        self.telaFmlAcolhedora["bg"] = '#ffffff'
+        self.telaFmlAcolhedora.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtFmlAcolhedora = Label(self.telaFmlAcolhedora,bg='#ffffff', text='''Programa Família Acolhedora
+Endereço: 
+Rua Pandiá Calógeras, 
+n° 157 - Jardim Jalisco
+Resende - RJ, 
+Telefone: (24) 3381-6174
+''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtFmlAcolhedora.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaFmlAcolhedora, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def Creas(self):
+        self.jm3.wm_withdraw()
+        self.telaCreas = Toplevel()
+        self.telaCreas.geometry('320x500+200+100')
+        self.telaCreas.resizable(True, True)
+        self.telaCreas["bg"] = '#ffffff'
+        self.telaCreas.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtCreas = Label(self.telaCreas,bg='#ffffff', text='''CREAS
+Endereço: 
+Rua Natanael Galvão, 
+n° 48 - Jardim Tropical
+Resende - RJ, 
+Telefone: (24) 3360-9775''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtCreas.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaCreas, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def Pop(self):
+        self.jm3.wm_withdraw()
+        self.telaPop = Toplevel()
+        self.telaPop.geometry('320x500+200+100')
+        self.telaPop.resizable(True, True)
+        self.telaPop["bg"] = '#ffffff'
+        self.telaPop.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtPop = Label(self.telaPop,bg='#ffffff', text='''Centro POP (Centro de
+referência especializado para 
+a população em situação de rua)
+Endereço: 
+Rua do Rosário, n° 230 - Lavapés
+Resende - RJ, 
+Telefone: (24) 3360-9739''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtPop.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaPop, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def Seas(self):
+        self.jm3.wm_withdraw()
+        self.telaSeas = Toplevel()
+        self.telaSeas.geometry('320x500+200+100')
+        self.telaSeas.resizable(True, True)
+        self.telaSeas["bg"] = '#ffffff'
+        self.telaSeas.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtSeas = Label(self.telaSeas,bg='#ffffff', text='''SEAS
+Endereço: 
+Rua Luis Rocha Miranda, 
+n° 44 - Centro
+Resende - RJ, 
+Telefone: (24) 3360-9939''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtSeas.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaSeas, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def BolsaFml(self):
+        self.jm4.wm_withdraw()
+        self.telaBolsaFml = Toplevel()
+        self.telaBolsaFml.geometry('320x500+200+100')
+        self.telaBolsaFml.resizable(True, True)
+        self.telaBolsaFml["bg"] = '#ffffff'
+        self.telaBolsaFml.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtBolsaFml = Label(self.telaBolsaFml,bg='#ffffff', text='''DIRETORIA DE CAD. ÚNICO
+E PROGRAMA BOLSA FAMÍLIA
+Endereço: 
+Rua Luis Rocha Miranda, 
+n° 44 - Centro
+Resende - RJ, 
+Telefone: (24) 3354-1458
+cadastrounico.resende@hotmail.com''',
+        font='arial, 10', height=1, width=5, relief='flat')
+        self.txtBolsaFml.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaBolsaFml, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def IncProdutiva(self):
+        self.jm4.wm_withdraw()
+        self.telaInc = Toplevel()
+        self.telaInc.geometry('320x500+200+100')
+        self.telaInc.resizable(True, True)
+        self.telaInc["bg"] = '#ffffff'
+        self.telaInc.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtInc = Label(self.telaInc,bg='#ffffff', text='''Inclusão Produtiva
+Endereço: 
+Estrada Resende-Riachuelo, 
+s/n, Morada da Colina
+Resende - RJ, 
+Telefone: (24) 3355 8693''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtInc.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaInc, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def PolPessoasDeficientes(self):
+        self.jm4.wm_withdraw()
+        self.telaPolDeficiemtes = Toplevel()
+        self.telaPolDeficiemtes.geometry('320x500+200+100')
+        self.telaPolDeficiemtes.resizable(True, True)
+        self.telaPolDeficiemtes["bg"] = '#ffffff'
+        self.telaPolDeficiemtes.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtPolDef = Label(self.telaPolDeficiemtes,bg='#ffffff', text='''Coordenadoria de Políticas 
+para as Pessoas com Deficiência
+Endereço: 
+Av. Riachuelo, 
+n° 232 - Nova Liberdade
+Resende - RJ, 
+Telefone: (24) 3381-4297
+cpd.resenderj@bol.com.br''',
+        font='arial, 10', height=1, width=5, relief='flat')
+        self.txtPolDef.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaPolDeficiemtes, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def ConselhosMunicipais(self):
+        self.jm4.wm_withdraw()
+        self.telaConsMun = Toplevel()
+        self.telaConsMun.geometry('320x500+200+100')
+        self.telaConsMun.resizable(True, True)
+        self.telaConsMun["bg"] = '#ffffff'
+        self.telaConsMun.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtConsMun = Label(self.telaConsMun,bg='#ffffff', text='''Casa dos Conselhos Municipais
+Endereço: 
+Rua do Rosário, 
+nº 45 - Lavapés
+Resende - RJ, 
+Telefone: (24) 3381 - 8674 / (24) 3354 - 6365
+casadosconselhosresende@gmail.com''',
+        font='arial, 10', height=1, width=5, relief='flat')
+        self.txtConsMun.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaConsMun, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    def Niam(self):
+        self.jm4.wm_withdraw()
+        self.telaNiam = Toplevel()
+        self.telaNiam.geometry('320x500+200+100')
+        self.telaNiam.resizable(True, True)
+        self.telaNiam["bg"] = '#ffffff'
+        self.telaNiam.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+
+        self.txtNiam = Label(self.telaNiam,bg='#ffffff', text='''NIAM - Núcleo Integrado 
+de Atendimento à Mulher
+Endereço: 
+Rua Macedo de Miranda, 
+nº 81, bairro Jardim Jalisco I
+Resende - RJ, 
+Telefone: (24) 3360-9824
+niamresende@yahoo.com.br''',
+        font='arial, 15', height=1, width=5, relief='flat')
+        self.txtNiam.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.40)
+        self.btnVoltarPag3 = Button(self.telaNiam, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
 
 
@@ -361,24 +588,94 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.jm2.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.txt3 = Label(self.jm2,bg='white', text='Página 2', font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
 
-        self.btn6 = Button(self.jm2, bg='#7ca4da', text='CRAS Itapuca', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItapuca)
-        self.btn6.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
-        self.btn7 = Button(self.jm2, bg='#7ca4da', text='Abrigo Nossa Casa', font='bold, 10', height=1, width=5, relief='flat', command=self.nossaCasa)
-        self.btn7.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
-        self.btn8 = Button(self.jm2, bg='#7ca4da', text='CCI Tobogã', font='bold, 10', height=1, width=5, relief='flat', command=self.cciToboga)
-        self.btn8.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
-        self.btn9 = Button(self.jm2, bg='#7ca4da', text='CRAS Jardim Esperança', font='bold, 10', height=1, width=5, relief='flat', command=self.crasJDEsperanca)
-        self.btn9.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
-        self.btn10 = Button(self.jm2, bg='#7ca4da', text='CRAS Lavapés', font='bold, 10', height=1, width=5, relief='flat', command=self.crasLavapes)
-        self.btn10.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
-        self.btn11= Button(self.jm2, bg='#7ca4da', text='CRAS Itinerante', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItinerante)
-        self.btn11.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
+        self.btn7 = Button(self.jm2, bg='#7ca4da', text='CRAS Itapuca', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItapuca)
+        self.btn7.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
+        self.btn8 = Button(self.jm2, bg='#7ca4da', text='Abrigo Nossa Casa', font='bold, 10', height=1, width=5, relief='flat', command=self.nossaCasa)
+        self.btn8.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
+        self.btn9 = Button(self.jm2, bg='#7ca4da', text='CCI Tobogã', font='bold, 10', height=1, width=5, relief='flat', command=self.cciToboga)
+        self.btn9.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
+        self.btn10 = Button(self.jm2, bg='#7ca4da', text='CRAS Jardim Esperança', font='bold, 10', height=1, width=5, relief='flat', command=self.crasJDEsperanca)
+        self.btn10.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
+        self.btn11 = Button(self.jm2, bg='#7ca4da', text='CRAS Lavapés', font='bold, 10', height=1, width=5, relief='flat', command=self.crasLavapes)
+        self.btn11.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
+        self.btn12= Button(self.jm2, bg='#7ca4da', text='CRAS Itinerante', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItinerante)
+        self.btn12.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
+
+        self.btnPagina1 = Button (self.jm2, text = "Avançar", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnPagina1.place(relx=0.75, rely=0.90, relwidth = 0.20, relheight = 0.10)
+
+        self.btnVoltarPrinc = Button(self.jm2, text='Voltar', bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
 
+# Criando terceira página de serviços
 
+    def Menu3(self):
+        self.jm2.withdraw()
+        self.jm3 = Tk()
+        self.jm3.geometry('320x500+200+100')
+        self.jm3.title('AcesSocial')
+        self.root.resizable(False,False)
+        self.jm3["bg"] = '#ffffff'
+        self.jm3.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+        self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.txt3 = Label(self.jm3,bg='white', text='Página 3', font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
 
+        self.btn13 = Button(self.jm3, bg='#7ca4da', text='CCI Cidade Alegria', font='bold, 10', height=1, width=5, relief='flat', command=self.cciAlegria)
+        self.btn13.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
+        self.btn14= Button(self.jm3, bg='#7ca4da', text='CCI Paraíso', font='bold, 10', height=1, width=5, relief='flat', command=self.cciParaiso)
+        self.btn14.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
+        self.btn15= Button(self.jm3, bg='#7ca4da', text='Programa Família Acolhedora', font='bold, 10', height=1, width=5, relief='flat', command=self.FmlAcolhedora)
+        self.btn15.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
+        self.btn16 = Button(self.jm3, bg='#7ca4da', text='CREAS', font='bold, 10', height=1, width=5, relief='flat', command=self.Creas)
+        self.btn16.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
+        self.btn17 = Button(self.jm3, bg='#7ca4da', text='Centro POP', font='bold, 10', height=1, width=5, relief='flat', command=self.Pop)
+        self.btn17.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
+        self.btn18= Button(self.jm3, bg='#7ca4da', text='SEAS', font='bold, 10', height=1, width=5, relief='flat', command=self.Seas)
+        self.btn18.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
 
+        self.btnPagina1 = Button (self.jm3, text = "Avançar", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnPagina1.place(relx=0.75, rely=0.90, relwidth = 0.20, relheight = 0.10)
+
+        self.btnVoltarPag2 = Button(self.jm3, text='Voltar', bg ='white', font='bold, 10', relief='flat', command = self.Menu2)
+        self.btnVoltarPag2.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
+
+    
+# Criando quarta página de serviços
+
+    def Menu4(self):
+        self.jm2.withdraw()
+        self.jm4 = Tk()
+        self.jm4.geometry('320x500+200+100')
+        self.jm4.title('AcesSocial')
+        self.root.resizable(False,False)
+        self.jm4["bg"] = '#ffffff'
+        self.jm4.iconbitmap("pessoas.ico")
+        self.imgVoltar = PhotoImage(file = "setavoltar.png")
+        self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.txt4 = Label(self.jm4,bg='white', text='Página 4', font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt4.place(relx= 0.01, rely=0.02, relwidth= 0.80, relheight= 0.10)
+
+        self.btn19 = Button(self.jm4, bg='#7ca4da', text='Diretoria de Cad. único e Bolsa Família', font='bold, 10', height=1, width=5, relief='flat', command=self.BolsaFml)
+        self.btn19.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
+        self.btn20= Button(self.jm4, bg='#7ca4da', text='Inclusão Produtiva', font='bold, 10', height=1, width=5, relief='flat', command=self.IncProdutiva)
+        self.btn20.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
+        self.btn21= Button(self.jm4, bg='#7ca4da', text='Políticas para Pessoas com Deficiência', font='bold, 10', height=1, width=5, relief='flat', command=self.PolPessoasDeficientes)
+        self.btn21.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
+        self.btn22 = Button(self.jm4, bg='#7ca4da', text='Casa dos Conselhos Municipais', font='bold, 10', height=1, width=5, relief='flat', command=self.ConselhosMunicipais)
+        self.btn22.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
+        self.btn23 = Button(self.jm4, bg='#7ca4da', text='Núcleo Integrado de Atendimento à Mulher', font='bold, 10', height=1, width=5, relief='flat', command=self.Niam)
+        self.btn23.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
+        self.btn24= Button(self.jm4, bg='#7ca4da', text='SEAS', font='bold, 10', height=1, width=5, relief='flat', command=self.Seas)
+        self.btn24.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
+
+        self.btnVoltarPag3 = Button(self.jm4, text='Voltar', bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
 
 
