@@ -17,11 +17,12 @@ class AcesSocial:
  
         self.img1 = Label (self.fr1, image = self.logo, bg = "#f7f7f7", activebackground = "green")
         self.img1.place(relx = 0, rely = 0, relwidth = 1, relheight = 1)
-        self.txt1 = Label(self.root,bg='#f7f7f7', text="Lei de garantias de direitos na Assistência Social", font='arial, 11', height=1, width=5, relief='flat' )
+        self.txt1 = Label(self.root,bg='#f7f7f7', text='''Lei de garantias 
+de direitos na Assistência Social!''', font='arial, 13', height=1, width=5, relief='flat' )
         self.txt1.place(relx= 0, rely=0.38, relwidth= 1, relheight= 0.10)
  
-        self.btnInicio = Button(self.root, bg='#3ec4cd', text='Ir para o aplicativo', font='bold, 10', height=1, width=5, relief='flat', command=self.JanelaMenu)
-        self.btnInicio.place(relx=0.13, rely=0.78, relwidth = 0.75, relheight = 0.10)
+        self.btnInicio = Button(self.root, bg='#000080', fg= 'white', text='Ir para o aplicativo', font='Arial, 15', height=1, width=5, relief='flat', command=self.JanelaMenu)
+        self.btnInicio.place(relx=0.13, rely=0.78, relwidth = 0.80, relheight = 0.10)
  
         self.root.mainloop()
     def semcomando(self):
@@ -33,14 +34,14 @@ class AcesSocial:
         self.telaOpcoes = Toplevel()
         self.telaOpcoes.geometry('320x500+200+100')
         self.telaOpcoes.resizable(True, True)
-        self.telaOpcoes["bg"] = '#ffffff'
+        self.telaOpcoes["bg"] = '#f7f7f7'
         self.telaOpcoes.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#3ec4cd', font = 'bold, 15', relief='flat', command=self.msgsobre)
         self.btnSobre.place(relx=0.10, rely=0.18, relwidth = 0.80, relheight = 0.10)
         self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#3ec4cd', font = 'bold, 15', relief='flat', command=self.telaOpcoes.quit)
         self.btnSair.place(relx=0.10, rely=0.38, relwidth = 0.80, relheight = 0.10)
-        self.btnVoltarPrinc = Button(self.telaOpcoes, image = self.imgVoltar, bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc = Button(self.telaOpcoes, image = self.imgVoltar, bg ='#f7f7f7', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
 # Criando as telas com as informações de cada serviço social
@@ -536,23 +537,20 @@ niamresende@yahoo.com.br''',
         self.jm.geometry('320x500+200+100')
         self.jm.title('AcesSocial')
         self.root.resizable(False,False)
-        self.jm["bg"] = '#ffffff'
+        self.jm["bg"] = '#B0C4DE'
         self.jm.iconbitmap("pessoas.ico")
         self.imgPesquisa = PhotoImage (file = "lupa.png")
         self.imgConfig = PhotoImage(file = "imgConfig.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
 
 
-
-        #self.txt3 = Label (self.jm, bg='black', text="Procure por um serviço social aqui!", font='arial, 11', height=1, width=5, relief='flat' )
-        #self.txt1.place(relx= 0.06, rely=0.03, relwidth= 0.08, relheight= 0.20)
-        self.txt3 = Label(self.jm,bg='white', text='''Encontre informações de 
+        self.txt3 = Label(self.jm,bg='#B0C4DE', text='''Encontre informações de 
 serviços sociais aqui!
 Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
 
-        self.btnConfig = Button (self.jm, text = "Opções", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.barraOpcoes)
+        self.btnConfig = Button (self.jm, text = "Opções", bg ='#000080', fg = "white", font='bold, 10', relief='flat', command = self.barraOpcoes)
         self.btnConfig.place(relx=0.80, rely=0.03, relheight=0.06, relwidth=0.15)
 
 
@@ -569,8 +567,8 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.btn6 = Button(self.jm, bg='#7ca4da', text='Pestalozzi', font='bold, 10', height=1, width=5, relief='flat', command=self.Pestalozzi)
         self.btn6.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
 
-        self.btnPagina1 = Button (self.jm, text = "Avançar", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.Menu2)
-        self.btnPagina1.place(relx=0.75, rely=0.90, relwidth = 0.20, relheight = 0.10)
+        self.btnPagina1 = Button (self.jm, text = "Avançar", bg ='#000080', fg = "white", font='bold, 10', relief='flat', command = self.Menu2)
+        self.btnPagina1.place(relx=0.75, rely=0.92, relwidth = 0.20, relheight = 0.05)
 
 # Criando segunda pagina de serviços
 
@@ -580,11 +578,11 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.jm2.geometry('320x500+200+100')
         self.jm2.title('AcesSocial')
         self.root.resizable(False,False)
-        self.jm2["bg"] = '#ffffff'
+        self.jm2["bg"] = '#B0C4DE'
         self.jm2.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
-        self.txt3 = Label(self.jm2,bg='white', text='Página 2', font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3 = Label(self.jm2,bg='#B0C4DE', text='Página 2', font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
         self.btn7 = Button(self.jm2, bg='#7ca4da', text='CRAS Itapuca', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItapuca)
@@ -600,10 +598,10 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.btn12= Button(self.jm2, bg='#7ca4da', text='CRAS Itinerante', font='bold, 10', height=1, width=5, relief='flat', command=self.crasItinerante)
         self.btn12.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
 
-        self.btnPagina1 = Button (self.jm2, text = "Avançar", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.Menu3)
-        self.btnPagina1.place(relx=0.75, rely=0.90, relwidth = 0.20, relheight = 0.10)
+        self.btnPagina1 = Button (self.jm2, text = "Avançar", bg ='#000080', fg='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnPagina1.place(relx=0.75, rely=0.92, relwidth = 0.20, relheight = 0.05)
 
-        self.btnVoltarPrinc = Button(self.jm2, text='Voltar', bg ='white', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc = Button(self.jm2, text='Voltar', bg ='#B0C4DE', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
 
@@ -615,11 +613,11 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.jm3.geometry('320x500+200+100')
         self.jm3.title('AcesSocial')
         self.root.resizable(False,False)
-        self.jm3["bg"] = '#ffffff'
+        self.jm3["bg"] = '#B0C4DE'
         self.jm3.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
-        self.txt3 = Label(self.jm3,bg='white', text='Página 3', font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3 = Label(self.jm3,bg='#B0C4DE', text='Página 3', font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
         self.btn13 = Button(self.jm3, bg='#7ca4da', text='CCI Cidade Alegria', font='bold, 10', height=1, width=5, relief='flat', command=self.cciAlegria)
@@ -635,10 +633,10 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.btn18= Button(self.jm3, bg='#7ca4da', text='SEAS', font='bold, 10', height=1, width=5, relief='flat', command=self.Seas)
         self.btn18.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
 
-        self.btnPagina1 = Button (self.jm3, text = "Avançar", bg ='#3ec4cd', font='bold, 10', relief='flat', command = self.Menu4)
-        self.btnPagina1.place(relx=0.75, rely=0.90, relwidth = 0.20, relheight = 0.10)
+        self.btnPagina1 = Button (self.jm3, text = "Avançar", bg ='#000080', fg='white', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnPagina1.place(relx=0.75, rely=0.92, relwidth = 0.20, relheight = 0.05)
 
-        self.btnVoltarPag2 = Button(self.jm3, text='Voltar', bg ='white', font='bold, 10', relief='flat', command = self.Menu2)
+        self.btnVoltarPag2 = Button(self.jm3, text='Voltar', bg ='#B0C4DE', font='bold, 10', relief='flat', command = self.Menu2)
         self.btnVoltarPag2.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
     
@@ -650,11 +648,11 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.jm4.geometry('320x500+200+100')
         self.jm4.title('AcesSocial')
         self.root.resizable(False,False)
-        self.jm4["bg"] = '#ffffff'
+        self.jm4["bg"] = '#B0C4DE'
         self.jm4.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setavoltar.png")
         self.imgPagina = PhotoImage(file="setaPagina.png")
-        self.txt4 = Label(self.jm4,bg='white', text='Página 4', font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt4 = Label(self.jm4,bg='#B0C4DE', text='Página 4', font='arial, 9', height=1, width=5, relief='flat' )
         self.txt4.place(relx= 0.11, rely=0.00, relwidth= 0.80, relheight= 0.10)
 
         self.btn19 = Button(self.jm4, bg='#7ca4da', text='Diretoria de Cad. único e Bolsa Família', font='bold, 10', height=1, width=5, relief='flat', command=self.BolsaFml)
@@ -670,7 +668,7 @@ Página 1''', font='arial, 9', height=1, width=5, relief='flat' )
         self.btn24= Button(self.jm4, bg='#7ca4da', text='SEAS', font='bold, 10', height=1, width=5, relief='flat', command=self.Seas)
         self.btn24.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPag3 = Button(self.jm4, text='Voltar', bg ='white', font='bold, 10', relief='flat', command = self.Menu3)
+        self.btnVoltarPag3 = Button(self.jm4, text='Voltar', bg ='#B0C4DE', font='bold, 10', relief='flat', command = self.Menu3)
         self.btnVoltarPag3.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
 
 
