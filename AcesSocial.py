@@ -37,9 +37,9 @@ de direitos na Assistência Social!''', font='arial, 13', height=1, width=5, rel
         self.telaOpcoes["bg"] = '#836FFF'
         self.telaOpcoes.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
-        self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#00008B', fg = "white", font = 'bold, 15', relief='flat', command=self.msgsobre)
+        self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#E6E6FA', fg = "black", font = 'bold, 15', relief='flat', command=self.msgsobre)
         self.btnSobre.place(relx=0.10, rely=0.18, relwidth = 0.80, relheight = 0.10)
-        self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#00008B', fg = "white", font = 'bold, 15', relief='flat', command=self.telaOpcoes.quit)
+        self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#E6E6FA', fg = "black", font = 'bold, 15', relief='flat', command=self.telaOpcoes.quit)
         self.btnSair.place(relx=0.10, rely=0.38, relwidth = 0.80, relheight = 0.10)
         self.btnVoltarPrinc = Button(self.telaOpcoes, text = "< Voltar", bg ='#836FFF', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
