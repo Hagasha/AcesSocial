@@ -37,7 +37,7 @@ de direitos na Assistência Social!''', font='arial, 13', height=1, width=5, rel
         self.quadro = Label(self.telaSobre, text='''AcesSocial - Sobre
 Esse projeto foi feito para
 ajudar as pessoas em vulnerabilidade social.''',
-bg='#8b9dc3', fg='white',font='bold, 10')
+bg='#f7f7f7', fg='black',font='bold, 10')
         self.quadro.place(relx=0.00, rely=0.25, relheight=0.50, relwidth=1)
         self.btnVoltarPrinc = Button(self.telaSobre, text = "< Voltar", bg ='#f7f7f7', font='bold, 10', relief='flat', command = self.barraOpcoes)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
@@ -50,9 +50,9 @@ bg='#8b9dc3', fg='white',font='bold, 10')
         self.telaOpcoes["bg"] = '#f7f7f7'
         self.telaOpcoes.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
-        self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#3b5998', fg = "black", font = 'bold, 15', relief='flat', command=self.msgsobre)
+        self.btnSobre = Button (self.telaOpcoes, text="Sobre", bg = '#3b5998', fg = "white", font = 'bold, 15', relief='flat', command=self.msgsobre)
         self.btnSobre.place(relx=0.10, rely=0.18, relwidth = 0.80, relheight = 0.10)
-        self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#3b5998', fg = "black", font = 'bold, 15', relief='flat', command=self.telaOpcoes.quit)
+        self.btnSair = Button (self.telaOpcoes, text="Sair", bg = '#3b5998', fg = "white", font = 'bold, 15', relief='flat', command=self.telaOpcoes.quit)
         self.btnSair.place(relx=0.10, rely=0.38, relwidth = 0.80, relheight = 0.10)
         self.btnVoltarPrinc = Button(self.telaOpcoes, text = "< Voltar", bg ='#f7f7f7', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.03, relheight=0.08, relwidth=0.20)
@@ -67,6 +67,7 @@ bg='#8b9dc3', fg='white',font='bold, 10')
         self.ptlz.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
+
         self.quadro = Label(self.ptlz, text='''Sociedade Pestalozzi Resende 
 
 Rua: Cel. Rocha Santos
@@ -75,7 +76,7 @@ Número e Bairro: 656 - Jardim Brasilia 2
 
 Cidade: Resende - RJ
 
-CEP: 27515-000, 
+CEP: 27515-000
 
 Telefone: (24) 3354-1460.''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
@@ -88,7 +89,7 @@ Telefone: (24) 3354-1460.''',
         self.linhaSuperior = Label(self.ptlz, bg='black')
         self.linhaSuperior.place(relx=0.0, rely=0.1, relheight=0.0, relwidth=1)
 
-        self.btnMapa = Button(self.ptlz, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
+        self.btnMapa = Button(self.ptlz, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.mapapestalozzi)
         self.btnMapa.place(relx=0.13, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
         self.btnVoltarPrinc = Button(self.ptlz, text = "< Voltar", bg ='#3b5998', fg = 'white', font='bold, 10', relief='flat', command = self.JanelaMenu)
@@ -116,13 +117,17 @@ Telefone: (24) 3354-6264''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtAsilo.place(relx=0.00, rely=0.25, relwidth= 1, relheight= 0.50)
 
+        self.txt3 = Label(self.telaAsilo,bg='#3b5998', fg ='white', text='',
+        font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3.place(relx= 0.00, rely=0.00, relwidth= 1, relheight= 0.10)
+
         self.linhaSuperior = Label(self.telaAsilo, bg='black')
         self.linhaSuperior.place(relx=0.0, rely=0.1, relheight=0.0, relwidth=1)
 
         self.btnMapa = Button(self.telaAsilo, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
         self.btnMapa.place(relx=0.13, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPrinc = Button(self.telaAsilo, text = "< Voltar", bg ='#8b9dc3', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc = Button(self.telaAsilo, text = "< Voltar",bg ='#3b5998', fg = 'white', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
 
@@ -170,7 +175,7 @@ Telefone: (24) 3358-9600''',
 
 Rua: Augusto Xavier de Lima
 
-Número e Bairro: 251 - Jardim Jalisco,
+Número e Bairro: 251 - Jardim Jalisco
 
 Cidade: Resende - RJ
 
@@ -230,7 +235,7 @@ Telefone: (24) 3381-2074''',
 
         self.txtToyota = Label(self.telaToyota, text='''CRAS Toyota
 
-Rua: Av. Projetada, s/n°
+Rua: Av. Projetada
 
 Bairro: Toyota II
 
@@ -240,13 +245,17 @@ Telefone: (24) 3360-5098''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtToyota.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
+        self.txt3 = Label(self.telaToyota,bg='#3b5998', fg ='white', text='',
+        font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3.place(relx= 0.00, rely=0.00, relwidth= 1, relheight= 0.10)
+
         self.linhaSuperior = Label(self.telaToyota, bg='black')
         self.linhaSuperior.place(relx=0.0, rely=0.1, relheight=0.0, relwidth=1)
 
         self.btnMapa = Button(self.telaToyota, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
         self.btnMapa.place(relx=0.13, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPrinc = Button(self.telaToyota, text = "< Voltar", bg ='#8b9dc3', font='bold, 10', relief='flat', command = self.JanelaMenu)
+        self.btnVoltarPrinc = Button(self.telaToyota, text = "< Voltar",bg ='#3b5998', fg = 'white', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
     def crasItapuca(self):
@@ -260,11 +269,11 @@ Telefone: (24) 3360-5098''',
 
         self.txtItapuca = Label(self.telaItapuca, text='''CRAS Itapuca
 
-Rua: Euzebio Manoel da Glória, s/n°
+Rua: Euzebio Manoel da Glória
 
 Bairro: Itapuca
 
-Resende - RJ
+Cidade: Resende - RJ
 
 Telefone: (24) 3360-5239''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
@@ -292,7 +301,7 @@ Telefone: (24) 3360-5239''',
 
 Rua: Rua do Rosário
 
-Número e Bairro:45 - Lavapés
+Número e Bairro: 45 - Lavapés
 
 Cidade: Resende - RJ
 
@@ -410,12 +419,15 @@ Telefone: (24) 3354-4676''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtcciToboga = Label(self.telacciToboga, text='''CCI Tobogã
-Endereço: 
-Rua Governador Portela
-s/n° (Parque Tobogã) - Manejo.
-Resende - RJ, 
+
+Rua: Rua Governador Portela
+
+Local e Bairro: Parque Tobogã - Manejo
+
+Cidade: Resende - RJ 
+
 Telefone: (24) 3360-0685''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
 
         self.linhaSuperior = Label(self.telacciToboga, bg='black')
         self.linhaSuperior.place(relx=0.0, rely=0.1, relheight=0.0, relwidth=1)
@@ -437,12 +449,15 @@ Telefone: (24) 3360-0685''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtcciAlegria = Label(self.telacciAlegria, text='''CCI Cidade Alegria
-Endereço: 
-Rua das Samambaias, 
-s/n - Cidade Alegria.
-Resende - RJ, 
+
+Rua: Rua das Samambaias
+
+Bairro: Cidade Alegria
+
+Cidade: Resende - RJ
+
 Telefone: (24) 3359-5557''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtcciAlegria.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telacciAlegria, bg='black')
@@ -464,12 +479,15 @@ Telefone: (24) 3359-5557''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtcciParaiso = Label(self.telacciParaiso, text='''CCI Paraíso
-Endereço: 
-Rua Dom Bosco, 
-s/n (Parque Paraíso) - Paraíso.
-Resende - RJ, 
+
+Rua: Rua Dom Bosco 
+
+Local e Bairro: Parque Paraíso - Paraíso
+
+Cidade: Resende - RJ
+
 Telefone: (24) 3360-3707''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtcciParaiso.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telacciParaiso, bg='black')
@@ -491,12 +509,15 @@ Telefone: (24) 3360-3707''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtFmlAcolhedora = Label(self.telaFmlAcolhedora, text='''Programa Família Acolhedora
-Endereço: 
-Rua Pandiá Calógeras, 
-n° 157 - Jardim Jalisco
-Resende - RJ, 
+
+Rua: Rua Pandiá Calógeras 
+
+Número e Bairro: 157 - Jardim Jalisco
+
+Cidade: Resende - RJ
+
 Telefone: (24) 3381-6174''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtFmlAcolhedora.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaFmlAcolhedora, bg='black')
@@ -519,11 +540,14 @@ Telefone: (24) 3381-6174''',
 
         self.txtCreas = Label(self.telaCreas, text='''CREAS
 Endereço: 
-Rua Natanael Galvão, 
-n° 48 - Jardim Tropical
-Resende - RJ, 
+Rua: Rua Natanael Galvão
+
+Número e Bairro: 48 - Jardim Tropical
+
+Cidade: Resende - RJ
+
 Telefone: (24) 3360-9775''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtCreas.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaCreas, bg='black')
@@ -547,11 +571,15 @@ Telefone: (24) 3360-9775''',
         self.txtPop = Label(self.telaPop, text='''Centro POP (Centro de
 referência especializado para 
 a população em situação de rua)
-Endereço: 
-Rua do Rosário, n° 230 - Lavapés
-Resende - RJ, 
+
+Rua: Rua do Rosário
+
+Número e Bairro: 230 - Lavapés
+
+Cidade: Resende - RJ
+
 Telefone: (24) 3360-9739''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtPop.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaPop, bg='black')
@@ -573,12 +601,15 @@ Telefone: (24) 3360-9739''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtSeas = Label(self.telaSeas, text='''SEAS
-Endereço: 
-Rua Luis Rocha Miranda, 
-n° 44 - Centro
-Resende - RJ, 
+ 
+Rua: Rua Luis Rocha Miranda, 
+
+Número e Bairro: 44 - Centro
+
+Cidade: Resende - RJ, 
+
 Telefone: (24) 3360-9939''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtSeas.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaSeas, bg='black')
@@ -601,13 +632,17 @@ Telefone: (24) 3360-9939''',
 
         self.txtBolsaFml = Label(self.telaBolsaFml, text='''DIRETORIA DE CAD. ÚNICO
 E PROGRAMA BOLSA FAMÍLIA
-Endereço: 
-Rua Luis Rocha Miranda, 
-n° 44 - Centro
-Resende - RJ, 
+
+Rua: Rua Luis Rocha Miranda, 
+
+Número e Bairro: 44 - Centro
+
+Cidade: Resende - RJ 
+
 Telefone: (24) 3354-1458
-cadastrounico.resende@hotmail.com''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+
+Site: cadastrounico.resende@hotmail.com''',
+        bg='#8b9dc3', fg='white', justify=LEFT,font='bold, 13')
         self.txtBolsaFml.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaBolsaFml, bg='black')
@@ -629,12 +664,15 @@ cadastrounico.resende@hotmail.com''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtInc = Label(self.telaInc, text='''Inclusão Produtiva
-Endereço: 
-Estrada Resende-Riachuelo, 
-s/n, Morada da Colina
-Resende - RJ, 
+
+Rua: Estrada Resende-Riachuelo
+
+Bairro: Morada da Colina
+
+Cidade: Resende - RJ, 
+
 Telefone: (24) 3355 8693''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+        bg='#8b9dc3', fg='white', justify=LEFT,font='bold, 13')
         self.txtInc.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaInc, bg='black')
@@ -657,13 +695,17 @@ Telefone: (24) 3355 8693''',
 
         self.txtPolDef = Label(self.telaPolDeficiemtes, text='''Coordenadoria de Políticas 
 para as Pessoas com Deficiência
-Endereço: 
-Av. Riachuelo, 
-n° 232 - Nova Liberdade
-Resende - RJ, 
+ 
+Rua: Av. Riachuelo
+
+Número e Bairro: 232 - Nova Liberdade
+
+Cidade: Resende - RJ 
+
 Telefone: (24) 3381-4297
-cpd.resenderj@bol.com.br''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+
+Site: cpd.resenderj@bol.com.br''',
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtPolDef.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaPolDeficiemtes, bg='black')
@@ -685,13 +727,17 @@ cpd.resenderj@bol.com.br''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtConsMun = Label(self.telaConsMun, text='''Casa dos Conselhos Municipais
-Endereço: 
-Rua do Rosário, 
-nº 45 - Lavapés
-Resende - RJ, 
-Telefone: (24) 3381 - 8674 / (24) 3354 - 6365
-casadosconselhosresende@gmail.com''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+ 
+Rua: Rua do Rosário, 
+
+Número e Bairro: 45 - Lavapés
+
+Cidade: Resende - RJ
+
+Telefones: (24) 3381 - 8674 / (24) 3354 - 6365
+
+E-mail: casadosconselhosresende@gmail.com''',
+        bg='#8b9dc3', fg='white', justify=LEFT,font='bold, 13')
         self.txtConsMun.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaConsMun, bg='black')
@@ -714,13 +760,17 @@ casadosconselhosresende@gmail.com''',
 
         self.txtNiam = Label(self.telaNiam, text='''NIAM - Núcleo Integrado 
 de Atendimento à Mulher
-Endereço: 
-Rua Macedo de Miranda, 
-nº 81, bairro Jardim Jalisco I
-Resende - RJ, 
+
+Rua: Rua Macedo de Miranda, 
+
+Número: 81, bairro Jardim Jalisco I
+
+Cidade: Resende - RJ, 
+
 Telefone: (24) 3360-9824
-niamresende@yahoo.com.br''',
-        bg='#8b9dc3', fg='white',font='bold, 13')
+
+E-mail:niamresende@yahoo.com.br''',
+        bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtNiam.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
         self.linhaSuperior = Label(self.telaNiam, bg='black')
@@ -732,6 +782,34 @@ niamresende@yahoo.com.br''',
         self.btnVoltarPag3 = Button(self.telaNiam, text = "< Voltar", bg ='#8b9dc3', font='bold, 10', relief='flat', command = self.Menu4)
         self.btnVoltarPag3.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
+    
+    def mapapestalozzi(self):
+        self.mp = Toplevel()
+        self.mp.geometry('320x500+200+100')
+        self.mp.title('AcesSocial')
+        self.mp.resizable(False,False)
+        self.mp["bg"] = '#8b9dc3'
+        self.mp.iconbitmap("pessoas.ico")
+        self.mapa = PhotoImage(file="mapa.png")
+
+        self.txt3 = Label(self.mp,bg='#3b5998', fg ='white', text='',
+        font='arial, 9', height=1, width=5, relief='flat' )
+        self.txt3.place(relx= 0.00, rely=0.00, relwidth= 1, relheight= 0.10)
+        
+        self.linhaSuperior = Label(self.mp, bg='black')
+        self.linhaSuperior.place(relx=0.0, rely=0.1, relheight=0.0, relwidth=1)
+        
+        self.btnVoltarPag3 = Button(self.mp, text = "< Voltar", bg ='#3b5998', fg = 'white', font='bold, 10', relief='flat', command = self.Pestalozzi)
+        self.btnVoltarPag3.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
+
+        self.fr = Frame(self.mp, bg= "green")
+        self.fr.place(relx = 0.08, rely = 0.2, relwidth = 0.85, relheight = 0.50)
+ 
+        self.img = Label (self.fr, image = self.mapa, bg = "#f7f7f7", activebackground = "green")
+        self.img.place(relx = 0, rely = 0, relwidth = 2, relheight = 2)
+        self.txtPag = Label (self.mp, bg='#8b9dc3', fg ='white', text='Localização no Maps', font='arial, 12', height=1, width=5, relief='flat')
+        self.txtPag.place(relx= 0.09, rely=0.70, relwidth= 0.80, relheight= 0.10)
+
 
 
 
@@ -742,7 +820,7 @@ niamresende@yahoo.com.br''',
         self.jm = Tk()
         self.jm.geometry('320x500+200+100')
         self.jm.title('AcesSocial')
-        self.root.resizable(False,False)
+        self.jm.resizable(False,False)
         self.jm["bg"] = '#f7f7f7'
         self.jm.iconbitmap("pessoas.ico")
         self.imgPesquisa = PhotoImage (file = "lupa.png")
