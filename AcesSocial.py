@@ -1,5 +1,4 @@
 from tkinter import *
-from time import sleep
 from tkinter import messagebox
 class AcesSocial:
     def __init__(self):
@@ -78,7 +77,7 @@ bg='#f7f7f7', fg='black',font='bold, 10')
 # Criando as telas com as informações de cada serviço social
 
     def Pestalozzi(self):
-        self.ptlz = Toplevel()
+        self.ptlz = Tk()
         self.ptlz.geometry('320x500+200+100')
         self.ptlz.resizable(True, True)
         self.ptlz["bg"] = "#8b9dc3"
@@ -87,15 +86,10 @@ bg='#f7f7f7', fg='black',font='bold, 10')
 
 
         self.quadro = Label(self.ptlz, text='''Sociedade Pestalozzi Resende 
-
 Rua: Cel. Rocha Santos
-
 Número e Bairro: 656 - Jardim Brasilia 2
-
 Cidade: Resende - RJ
-
 CEP: 27515-000
-
 Telefone: (24) 3354-1460.''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.quadro.place(relx=0.00, rely=0.20, relheight=0.50, relwidth=1)
@@ -113,6 +107,8 @@ Telefone: (24) 3354-1460.''',
         self.btnVoltarPrinc = Button(self.ptlz, text = "< Voltar", bg ='#3b5998', fg = 'white', font='bold, 10', relief='flat', command = self.JanelaMenu)
         self.btnVoltarPrinc.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
+        
+
     def Asilo(self):
         self.telaAsilo = Toplevel()
         self.telaAsilo.geometry('320x500+200+100')
@@ -122,15 +118,10 @@ Telefone: (24) 3354-1460.''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtAsilo = Label(self.telaAsilo, text='''ILPI Asilo Nicolino Gulhot
-
 Rua: Av. Augusto de Carvalho, 
-
 Número e Bairro: 1080 - Parque Ipiranga
-
 Cidade: Resende - RJ
-
 CEP: 27516-240
-
 Telefone: (24) 3354-6264''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtAsilo.place(relx=0.00, rely=0.25, relwidth= 1, relheight= 0.50)
@@ -160,13 +151,9 @@ Telefone: (24) 3354-6264''',
         self.txtForum = Label(self.telaForum, text='''Fórum de Resende
  
 Rua: Av. Rita Maria Ferreira da Rocha
-
 Número e Bairro: 500 - Jardim Jalisco
-
 Cidade: Resende - RJ
-
 CEP: 27510-060
-
 Telefone: (24) 3358-9600''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtForum.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -194,15 +181,10 @@ Telefone: (24) 3358-9600''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtPref = Label(self.telaPref, text='''Prefeitura Municipal de Resende
-
 Rua: Augusto Xavier de Lima
-
 Número e Bairro: 251 - Jardim Jalisco
-
 Cidade: Resende - RJ
-
 CEP: 27510-070
-
 Telefone: (24) 3354-6000''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtPref.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -230,13 +212,9 @@ Telefone: (24) 3354-6000''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtParaiso = Label(self.telaParaiso, text='''CRAS Paraíso
-
 Rua: Avenida Coronel Abílio Godoy
-
 Número e Bairro: 127 - Paraíso
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3381-2074''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtParaiso.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -264,13 +242,9 @@ Telefone: (24) 3381-2074''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtToyota = Label(self.telaToyota, text='''CRAS Toyota
-
 Rua: Av. Projetada
-
 Bairro: Toyota II
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-5098''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtToyota.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -298,13 +272,9 @@ Telefone: (24) 3360-5098''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtItapuca = Label(self.telaItapuca, text='''CRAS Itapuca
-
 Rua: Euzebio Manoel da Glória
-
 Bairro: Itapuca
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-5239''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtItapuca.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -332,13 +302,9 @@ Telefone: (24) 3360-5239''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtItinerante = Label(self.telaItinerante, text='''CRAS Itinerante
-
 Rua: Rua do Rosário
-
 Número e Bairro: 45 - Lavapés
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-9510''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtItinerante.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -368,11 +334,8 @@ Telefone: (24) 3360-9510''',
         self.txtnossaCasa = Label(self.telanossaCasa, text='''Abrigo nossa Casa
  
 Rua: Av.Rita Maria Ferreira da Rocha
-
 Número e Bairro: 1301 - Jardim Jalisco
-
 Cidade: Resende - RJ, 
-
 Telefone: (24) 3360-9888''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtnossaCasa.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -400,13 +363,9 @@ Telefone: (24) 3360-9888''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtLavapes = Label(self.telaLavapes, text='''CRAS Lavapés
-
 Rua: Rua Eduardo Cotrim
-
 Número e Bairro: 36 - Lavapés
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-9887''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtLavapes.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -434,13 +393,9 @@ Telefone: (24) 3360-9887''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtjdEsperanca = Label(self.telajdEsperanca, text='''CRAS Jardim Esperança
-
 Rua: Rua Frei Tito
-
 Número e Bairro: 27 - Fazenda da Barra I
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3354-4676''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
         self.txtjdEsperanca.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -469,13 +424,9 @@ Telefone: (24) 3354-4676''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtcciToboga = Label(self.telacciToboga, text='''CCI Tobogã
-
 Rua: Rua Governador Portela
-
 Local e Bairro: Parque Tobogã - Manejo
-
 Cidade: Resende - RJ 
-
 Telefone: (24) 3360-0685''',
         bg='#8b9dc3', fg='white',justify=LEFT, font='bold, 13')
 
@@ -503,18 +454,14 @@ Telefone: (24) 3360-0685''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtcciAlegria = Label(self.telacciAlegria, text='''CCI Cidade Alegria
-
 Rua: Rua das Samambaias
-
 Bairro: Cidade Alegria
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3359-5557''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtcciAlegria.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
-        self.txt3 = Label(self.cciAlegria,bg='#3b5998', fg ='white', text='',
+        self.txt3 = Label(self.telacciAlegria,bg='#3b5998', fg ='white', text='',
         font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.00, rely=0.00, relwidth= 1, relheight= 0.10)
 
@@ -537,18 +484,14 @@ Telefone: (24) 3359-5557''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtcciParaiso = Label(self.telacciParaiso, text='''CCI Paraíso
-
 Rua: Rua Dom Bosco 
-
 Local e Bairro: Parque Paraíso - Paraíso
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-3707''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtcciParaiso.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
-        self.txt3 = Label(self.cciParaiso,bg='#3b5998', fg ='white', text='',
+        self.txt3 = Label(self.telacciParaiso,bg='#3b5998', fg ='white', text='',
         font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.00, rely=0.00, relwidth= 1, relheight= 0.10)
 
@@ -571,13 +514,9 @@ Telefone: (24) 3360-3707''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtFmlAcolhedora = Label(self.telaFmlAcolhedora, text='''Programa Família Acolhedora
-
 Rua: Rua Pandiá Calógeras 
-
 Número e Bairro: 157 - Jardim Jalisco
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3381-6174''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtFmlAcolhedora.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -607,11 +546,8 @@ Telefone: (24) 3381-6174''',
         self.txtCreas = Label(self.telaCreas, text='''CREAS
 Endereço: 
 Rua: Rua Natanael Galvão
-
 Número e Bairro: 48 - Jardim Tropical
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-9775''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtCreas.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -641,13 +577,9 @@ Telefone: (24) 3360-9775''',
         self.txtPop = Label(self.telaPop, text='''Centro POP (Centro de
 referência especializado para 
 a população em situação de rua)
-
 Rua: Rua do Rosário
-
 Número e Bairro: 230 - Lavapés
-
 Cidade: Resende - RJ
-
 Telefone: (24) 3360-9739''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtPop.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -677,11 +609,8 @@ Telefone: (24) 3360-9739''',
         self.txtSeas = Label(self.telaSeas, text='''SEAS
  
 Rua: Rua Luis Rocha Miranda, 
-
 Número e Bairro: 44 - Centro
-
 Cidade: Resende - RJ, 
-
 Telefone: (24) 3360-9939''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtSeas.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -710,16 +639,11 @@ Telefone: (24) 3360-9939''',
 
         self.txtBolsaFml = Label(self.telaBolsaFml, text='''DIRETORIA DE CAD. ÚNICO
 E PROGRAMA BOLSA FAMÍLIA
-
 Rua: Rua Luis Rocha Miranda, 
-
 Número e Bairro: 44 - Centro
-
 Cidade: Resende - RJ 
-
 Telefone: (24) 3354-1458
-
-Site: cadastrounico.resende@hotmail.com''',
+E-mail: cadastrounico.resende@hotmail.com''',
         bg='#8b9dc3', fg='white', justify=LEFT,font='bold, 13')
         self.txtBolsaFml.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
         
@@ -733,7 +657,7 @@ Site: cadastrounico.resende@hotmail.com''',
         self.btnMapa = Button(self.telaBolsaFml, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
         self.btnMapa.place(relx=0.11, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPag3 = Button(self.telaBolsaFml, text = "< Voltar", bg ='#3b5998',  font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3 = Button(self.telaBolsaFml, text = "< Voltar", bg ='#3b5998', fg='white',  font='bold, 10', relief='flat', command = self.Menu4)
         self.btnVoltarPag3.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
     def IncProdutiva(self):
@@ -746,13 +670,9 @@ Site: cadastrounico.resende@hotmail.com''',
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
 
         self.txtInc = Label(self.telaInc, text='''Inclusão Produtiva
-
 Rua: Estrada Resende-Riachuelo
-
 Bairro: Morada da Colina
-
 Cidade: Resende - RJ, 
-
 Telefone: (24) 3355 8693''',
         bg='#8b9dc3', fg='white', justify=LEFT,font='bold, 13')
         self.txtInc.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -767,7 +687,7 @@ Telefone: (24) 3355 8693''',
         self.btnMapa = Button(self.telaInc, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
         self.btnMapa.place(relx=0.11, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPag3 = Button(self.telaInc, text = "< Voltar", bg ='#3b5998', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3 = Button(self.telaInc, text = "< Voltar", bg ='#3b5998', fg='white', font='bold, 10', relief='flat', command = self.Menu4)
         self.btnVoltarPag3.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
     def PolPessoasDeficientes(self):
@@ -783,14 +703,10 @@ Telefone: (24) 3355 8693''',
 para as Pessoas com Deficiência
  
 Rua: Av. Riachuelo
-
 Número e Bairro: 232 - Nova Liberdade
-
 Cidade: Resende - RJ 
-
 Telefone: (24) 3381-4297
-
-Site: cpd.resenderj@bol.com.br''',
+E-mail: cpd.resenderj@bol.com.br''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtPolDef.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
 
@@ -804,7 +720,7 @@ Site: cpd.resenderj@bol.com.br''',
         self.btnMapa = Button(self.telaPolDeficiemtes, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
         self.btnMapa.place(relx=0.11, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPag3 = Button(self.telaPolDeficiemtes, text = "< Voltar", bg ='#3b5998', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3 = Button(self.telaPolDeficiemtes, text = "< Voltar", bg ='#3b5998', fg='white', font='bold, 10', relief='flat', command = self.Menu4)
         self.btnVoltarPag3.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
     def ConselhosMunicipais(self):
@@ -819,13 +735,9 @@ Site: cpd.resenderj@bol.com.br''',
         self.txtConsMun = Label(self.telaConsMun, text='''Casa dos Conselhos Municipais
  
 Rua: Rua do Rosário, 
-
 Número e Bairro: 45 - Lavapés
-
 Cidade: Resende - RJ
-
 Telefones: (24) 3381 - 8674 / (24) 3354 - 6365
-
 E-mail: casadosconselhosresende@gmail.com''',
         bg='#8b9dc3', fg='white', justify=LEFT,font='bold, 13')
         self.txtConsMun.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -840,7 +752,7 @@ E-mail: casadosconselhosresende@gmail.com''',
         self.btnMapa = Button(self.telaConsMun, text = 'Ir ao mapa', bg = '#3b5998', fg='white', font = 'bold, 15', relief ='flat', command = self.semcomando)
         self.btnMapa.place(relx=0.11, rely=0.78, relwidth = 0.80, relheight = 0.10)
 
-        self.btnVoltarPag3 = Button(self.telaConsMun, text = "< Voltar", bg ='#3b5998', font='bold, 10', relief='flat', command = self.Menu4)
+        self.btnVoltarPag3 = Button(self.telaConsMun, text = "< Voltar", bg ='#3b5998', fg= 'white', font='bold, 10', relief='flat', command = self.Menu4)
         self.btnVoltarPag3.place(relx=0.02, rely=0.02, relheight=0.08, relwidth=0.20)
 
     def Niam(self):
@@ -854,15 +766,10 @@ E-mail: casadosconselhosresende@gmail.com''',
 
         self.txtNiam = Label(self.telaNiam, text='''NIAM - Núcleo Integrado 
 de Atendimento à Mulher
-
 Rua: Rua Macedo de Miranda, 
-
 Número: 81, bairro Jardim Jalisco I
-
 Cidade: Resende - RJ, 
-
 Telefone: (24) 3360-9824
-
 E-mail:niamresende@yahoo.com.br''',
         bg='#8b9dc3', fg='white', justify=LEFT, font='bold, 13')
         self.txtNiam.place(relx=0.00, rely=0.20, relwidth= 1, relheight= 0.50)
@@ -1069,15 +976,14 @@ de serviços sociais aqui!''',
         self.btn19 = Button(self.jm4, bg='#dfe3ee', text='Diretoria de Cad. único e Bolsa Família', font='bold, 10', height=1, width=5, relief='flat', command=self.BolsaFml)
         self.btn19.place(relx=0.10, rely=0.13, relwidth = 0.80, relheight = 0.10)
         self.btn20= Button(self.jm4, bg='#dfe3ee', text='Inclusão Produtiva', font='bold, 10', height=1, width=5, relief='flat', command=self.IncProdutiva)
-        self.btn20.place(relx=0.10, rely=0.78, relwidth = 0.80, relheight = 0.10)
+        self.btn20.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
         self.btn21= Button(self.jm4, bg='#dfe3ee', text='Políticas para Pessoas com Deficiência', font='bold, 10', height=1, width=5, relief='flat', command=self.PolPessoasDeficientes)
-        self.btn21.place(relx=0.10, rely=0.65, relwidth = 0.80, relheight = 0.10)
+        self.btn21.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
         self.btn22 = Button(self.jm4, bg='#dfe3ee', text='Casa dos Conselhos Municipais', font='bold, 10', height=1, width=5, relief='flat', command=self.ConselhosMunicipais)
-        self.btn22.place(relx=0.10, rely=0.52, relwidth = 0.80, relheight = 0.10)
+        self.btn22.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
         self.btn23 = Button(self.jm4, bg='#dfe3ee', text='Núcleo Integrado de Atendimento à Mulher', font='bold, 10', height=1, width=5, relief='flat', command=self.Niam)
-        self.btn23.place(relx=0.10, rely=0.39, relwidth = 0.80, relheight = 0.10)
-        self.btn24= Button(self.jm4, bg='#dfe3ee', text='SEAS', font='bold, 10', height=1, width=5, relief='flat', command=self.Seas)
-        self.btn24.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
+        self.btn23.place(relx=0.10, rely=0.26, relwidth = 0.80, relheight = 0.10)
+
 
 
         self.btnVoltarPag3 = Button(self.jm4, text='Voltar', bg= '#3b5998', fg='white', font='bold, 10', relief='flat', command = self.Menu3)
