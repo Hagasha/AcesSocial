@@ -829,8 +829,8 @@ E-mail:niamresende@yahoo.com.br''',
         self.jm["bg"] = '#f7f7f7'
         self.jm.iconbitmap("pessoas.ico")
         self.imgPesquisa = PhotoImage (file = "lupa.png")
-        self.imgConfig = PhotoImage(file = "engrenagem.png")
-        self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.imgConfig = PhotoImage(file = "imgConfig.png")
+        self.imgPagina = PhotoImage(file="setaVoltar.png")
 
 
 
@@ -876,7 +876,7 @@ de serviços sociais aqui!''',
         self.jm2["bg"] = '#f7f7f7'
         self.jm2.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
-        self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.imgPagina = PhotoImage(file="setaVoltar.png")
         self.txt3 = Label(self.jm2,bg='#f7f7f7', text='Página 2', font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.11, rely=0.90, relwidth= 0.80, relheight= 0.10)
 
@@ -919,7 +919,7 @@ de serviços sociais aqui!''',
         self.jm3["bg"] = '#f7f7f7'
         self.jm3.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
-        self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.imgPagina = PhotoImage(file="setaVoltar.png")
         self.txt3 = Label(self.jm3,bg='#f7f7f7', text='Página 3', font='arial, 9', height=1, width=5, relief='flat' )
         self.txt3.place(relx= 0.11, rely=0.90, relwidth= 0.80, relheight= 0.10)
 
@@ -961,7 +961,7 @@ de serviços sociais aqui!''',
         self.jm4["bg"] = '#f7f7f7'
         self.jm4.iconbitmap("pessoas.ico")
         self.imgVoltar = PhotoImage(file = "setaReturn.png")
-        self.imgPagina = PhotoImage(file="setaPagina.png")
+        self.imgPagina = PhotoImage(file="setaVoltar.png")
         
         self.txt3 = Label(self.jm4,bg='#3b5998', fg ='white', text='',
         font='arial, 9', height=1, width=5, relief='flat' )
